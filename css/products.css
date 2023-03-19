@@ -15,7 +15,7 @@
 
 .card{
     width: 300px;
-    height: 450px;
+    height: 410px;
     overflow: hidden;
     border-radius: 10px;
     background-color: #141414;
@@ -36,4 +36,5 @@
 .items{
     padding: 10px 10px;
 }
+
 

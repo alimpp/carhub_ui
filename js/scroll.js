@@ -7,3 +7,8 @@ const goToProducts = () => {
     const elem = document.getElementById('products')
     return elem.scrollIntoView()
 }
+
+const goToAbout = () => {
+    const elem = document.getElementById('about')
+    return elem.scrollIntoView()
+}

@@ -1,0 +1,45 @@
+.about-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/gif/nissan-gtr.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-glass{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    padding: 0px 44px;
+}
+
+.about-text{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.target-text{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:900px) {
+    .about-glass{
+        flex-direction: column;
+    }
+    .about-text{
+        width: 100%;
+    }
+    .target-text{
+        width: 100%;
+    }
+}

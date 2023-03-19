@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cars Hub</title>
 </head>
 <body>
@@ -25,7 +27,7 @@
                     <ul>
                         <li><a onclick="goToHome()">Home</a></li>
                         <li><a onclick="goToProducts()">Products</a></li>
-                        <li><a>About Us</a></li>
+                        <li><a onclick="goToAbout()">About Us</a></li>
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
@@ -40,7 +42,7 @@
         </nav>
         <div class="header-container">
            <div class="header-glass">
-            <div class="items-container">
+            <div class="items-container" data-aos="fade-down-left">
                 <h2 class="orange-color">Welcome To Carhub</h2>
                 <p class="light-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam eos a hic quas quibusdam, rerum explicabo, recusandae nulla asperiores modi itaque at, voluptate eius quo mollitia minus dolorem maiores totam.</p>
                  <div>
@@ -52,10 +54,10 @@
         </div>
         <div class="home-container" id="home">
             <div class="home-glass">
-                <h2 class="orange-color">Carhub Is Ready For You...</h2>
-                <p class="light-color" style="margin-top: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia facilis exercitationem minima. Ullam, asperiores. Nesciunt, quos nam? Temporibus, itaque dolorem quae eaque perspiciatis, deleniti distinctio cum nulla quibusdam sed ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed odio aperiam voluptas alias ab quam temporibus inventore non, est dolor quod molestiae dolorem reprehenderit. Voluptas beatae mollitia expedita vero?</p>
+                <h2 class="orange-color" data-aos="zoom-out-right" >Carhub Is Ready For You...</h2>
+                <p class="light-color"  data-aos="zoom-out-right" style="margin-top: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia facilis exercitationem minima. Ullam, asperiores. Nesciunt, quos nam? Temporibus, itaque dolorem quae eaque perspiciatis, deleniti distinctio cum nulla quibusdam sed ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sed odio aperiam voluptas alias ab quam temporibus inventore non, est dolor quod molestiae dolorem reprehenderit. Voluptas beatae mollitia expedita vero?</p>
                 <div style="margin-top: 10px;">
-                    <button class="orange-button">About Us</button>
+                    <button class="orange-button" onclick="goToAbout()">About Us</button>
                     <button class="light-button" style="margin-left: 5px;">Contact Us</button>
                  </div>
             </div>
@@ -63,10 +65,11 @@
         <div class="products-container" id="products">
             <h2 class="orange-color">Products Is Ready In Carhub</h2>
             <div class="products-box-container">
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="3000">
                     <img class="card-image" src="./assets/image/nissan-gtr.png" alt="image">
                    <div class="items">
-                    <h5 class="light-color">Nissan GTR</h5>
+                    <h5 class="light-color">Nissan GTR</span>
                     <p class="light-color" style="padding-top: 20px;">80/000 $</p>
                     <p class="light-color">11/000 KM</p>
                     <div style="margin-top: 10px;">
@@ -78,10 +81,11 @@
                     </div>
                    </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="2000">
                     <img class="card-image" src="./assets/image/bmw.jpg" alt="image">
                     <div class="items">
-                        <h5 class="light-color">BMW</h5>
+                        <h5 class="light-color">BMW</span>
                         <p class="light-color" style="padding-top: 20px;">80/000 $</p>
                         <p class="light-color">11/000 KM</p>
                         <div style="margin-top: 10px;">
@@ -93,10 +97,11 @@
                         </div>
                        </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="3000">
                     <img class="card-image" src="./assets/image/camaro.jpg" alt="image">
                     <div class="items">
-                        <h5 class="light-color">Camaro</h5>
+                        <h5 class="light-color">Camaro</span>
                         <p class="light-color" style="padding-top: 20px;">85/000 $</p>
                         <p class="light-color">120/000 KM</p>
                         <div style="margin-top: 10px;">
@@ -108,10 +113,11 @@
                         </div>
                        </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="2000">
                     <img class="card-image" src="./assets/image/doge.jpg" alt="image">
                     <div class="items">
-                        <h5 class="light-color">Doge Challenger</h5>
+                        <h5 class="light-color">Doge Challenger</span>
                         <p class="light-color" style="padding-top: 20px;">98/000 $</p>
                         <p class="light-color">10/000 KM</p>
                         <div style="margin-top: 10px;">
@@ -123,10 +129,11 @@
                         </div>
                        </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="2000">
                     <img class="card-image" src="./assets/image/i8.jpg" alt="image">
                     <div class="items">
-                        <h5 class="light-color">BMW i8</h5>
+                        <h5 class="light-color">BMW i8</span>
                         <p class="light-color" style="padding-top: 20px;">150/000 $</p>
                         <p class="light-color">10/000 KM</p>
                         <div style="margin-top: 10px;">
@@ -138,10 +145,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="2000">
                     <img class="card-image" src="./assets/image/mustang.jpg" alt="image">
                     <div class="items">
-                        <h5 class="light-color">Mustang</h5>
+                        <h5 class="light-color">Mustang</span>
                         <p class="light-color" style="padding-top: 20px;">95/000 $</p>
                         <p class="light-color">9/000 KM</p>
                         <div style="margin-top: 10px;">
@@ -153,10 +161,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="3000">
                     <img class="card-image" src="./assets/image/supra.jpg" alt="image">
                     <div class="items">
-                        <h5 class="light-color">Toyata Supra</h5>
+                        <h5 class="light-color">Toyata Supra</span>
                         <p class="light-color" style="padding-top: 20px;">80/000 $</p>
                         <p class="light-color">10/000 KM</p>
                        <div style="margin-top: 10px;">
@@ -170,8 +179,33 @@
                 </div>
             </div>
         </div>
+        <div class="about-container" id="about">
+           <div class="about-glass">
+            <div class="about-text" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <h2 class="orange-color">About Us Carhub</h2>
+                <p class="light-color" style="padding-top: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim necessitatibus vero deserunt quas at? Placeat porro neque laborum numquam itaque rerum! Facere eveniet, odio ea fugiat neque sapiente debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nobis consectetur vero recusandae quae at repellendus illum praesentium eligendi odit vel alias voluptatibus asperiores, inventore nostrum beatae eos fugiat cumque.</p>
+                  <div style="margin-top: 10px;">
+                    <button class="orange-button" onclick="goToProducts()">Product</button>
+                 </div>
+            </div>
+            <div class="target-text" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+                <h2 class="orange-color">Carhub Target</h2>
+                <p class="light-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque nemo placeat in dignissimos maxime voluptatum praesentium, sit autem commodi dolore, sequi dicta alias ut vero cupiditate corporis necessitatibus a! Harum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum voluptas saepe dolorem delectus earum nesciunt, at dicta? Sit magnam ducimus, ullam facilis quasi ea, animi impedit excepturi, porro quo laudantium.</p>
+                  <div style="margin-top: 10px;">
+                    <button class="light-button">Contact Us</button>
+                 </div>
+            </div>
+           </div>
+        </div>
     </div>
     <script src="./js/navbar.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

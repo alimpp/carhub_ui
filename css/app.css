@@ -15,3 +15,11 @@
     "Segoe UI Symbol";
     scroll-behavior: smooth;
 }
+
+span{
+    font-size: 14px;
+}
+
+p{
+    font-size: 11px;
+}
