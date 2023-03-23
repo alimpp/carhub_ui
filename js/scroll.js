@@ -12,3 +12,8 @@ const goToAbout = () => {
     const elem = document.getElementById('about')
     return elem.scrollIntoView()
 }
+
+const goToContact = () => {
+    const elem = document.getElementById('contact')
+    return elem.scrollIntoView()
+}
